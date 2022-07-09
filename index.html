@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- displays site properly based on user's device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Stats preview card component</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- Main -->
+    <main
+      class="container rounded-lg m-6 max-w-lg md:flex md:flex-row-reverse md:max-w-5xl"
+    >
+      <!--  Image Container  -->
+      <!-- Image - URL Defined in Stylesheet -->
+      <div
+        class="img-container bg-purple-900 rounded-t-lg relative h-48 sm:h-72 md:rounded-none md:rounded-r-lg md:w-2/4 md:h-auto"
+      >
+        <!-- Purple Overlay -->
+        <div
+          class="overlay rounded-t-lg md:rounded-none md:rounded-r-lg hover:opacity-75"
+        ></div>
+      </div>
+
+      <!--  Text Container  -->
+      <div
+        class="p-8 md:w-2/4 text-center md:text-left md:p-16 md:flex md:flex-col md:justify-between"
+      >
+        <!--   Heading Text   -->
+        <h1 class="text-2xl font-bold mb-4 lg:text-3xl">
+          Get <span class="text-purple-500">insights</span> that help your
+          business grow.
+        </h1>
+        <p class="text-sm mb-8 lg:text-base">
+          Discover the benefits of data analytics and make better decisions
+          regarding revenue, customer experience, and overall efficiency.
+        </p>
+
+        <!--   Stats   -->
+        <div class="stats md:flex md:justify-between">
+          <!--    Stat #1    -->
+          <div class="mb-4 md:mb-0">
+            <h2 class="text-xl font-bold hover:text-purple-500 lg:text-2xl">
+              10k+
+            </h2>
+            <p class="uppercase text-xs lg:text-sm">Companies</p>
+          </div>
+
+          <!--    Stat #1    -->
+          <div class="mb-4 md:mb-0">
+            <h2 class="text-xl font-bold hover:text-purple-500 lg:text-2xl">
+              314
+            </h2>
+            <p class="uppercase text-xs lg:text-sm">Templates</p>
+          </div>
+
+          <!--    Stat #3    -->
+          <div>
+            <h2 class="text-xl font-bold hover:text-purple-500 lg:text-2xl">
+              12M+
+            </h2>
+            <p class="uppercase text-xs lg:text-sm">Queries</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
